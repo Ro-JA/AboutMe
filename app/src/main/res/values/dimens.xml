@@ -3,4 +3,5 @@
     <dimen name="size_text_view">35sp</dimen>
     <dimen name="padding_text_view">8dp</dimen>
     <dimen name="margin_top_layout">16dp</dimen>
+    <dimen name="padding_start">16dp</dimen>
 </resources>
