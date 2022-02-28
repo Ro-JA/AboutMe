@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NameStyle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -23,12 +24,13 @@
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="match_parent"
+        android:id="@+id/nickname_edit"
+        style="@style/NameStyle"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="@string/hint_editText"
         android:inputType="textPersonName"
-        android:text="Name" />
+        />
 
     <ScrollView
         android:id="@+id/bio_scroll"
