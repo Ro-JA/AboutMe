@@ -27,10 +27,11 @@
         android:id="@+id/nickname_edit"
         style="@style/NameStyle"
         android:layout_height="wrap_content"
+        android:layout_width="match_parent"
         android:ems="10"
         android:hint="@string/hint_editText"
         android:inputType="textPersonName"
-        />
+        android:gravity="center"/>
 
     <ScrollView
         android:id="@+id/bio_scroll"
