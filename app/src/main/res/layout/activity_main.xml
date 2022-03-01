@@ -23,15 +23,6 @@
         android:contentDescription="@string/image_start"
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
-    <Button
-        android:id="@+id/button_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_gravity="center"
-        android:layout_margin="@dimen/margin_top_layout"
-        />
-
     <EditText
         android:id="@+id/nickname_edit"
         style="@style/NameStyle"
@@ -41,6 +32,24 @@
         android:hint="@string/hint_editText"
         android:inputType="textPersonName"
         android:gravity="center"/>
+
+    <Button
+        android:id="@+id/done_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_top_layout"
+        android:fontFamily="@font/roboto_thin"
+        android:text="@string/button_text" />
+
+    <TextView
+        android:id="@+id/nickNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity=""
+        android:textAlignment="center"
+        android:visibility="gone" />
 
     <ScrollView
         android:id="@+id/bio_scroll"
