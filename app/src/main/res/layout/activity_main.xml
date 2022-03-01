@@ -23,6 +23,15 @@
         android:contentDescription="@string/image_start"
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
+    <Button
+        android:id="@+id/button_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_top_layout"
+        />
+
     <EditText
         android:id="@+id/nickname_edit"
         style="@style/NameStyle"
