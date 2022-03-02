@@ -1,89 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/NameStyle"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
+    <LinearLayout
+
         style="@style/NameStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_view" />
-
-    <ImageView
-        android:id="@+id/image_start"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_top_layout"
-        android:background="@color/black"
-        android:contentDescription="@string/image_start"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
-
-    <EditText
-        android:id="@+id/nickname_edit"
-        style="@style/NameStyle"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:ems="10"
-        android:hint="@string/hint_editText"
-        android:inputType="textPersonName"
-        android:gravity="center"/>
-
-    <Button
-        android:id="@+id/done_button"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/margin_top_layout"
-        android:fontFamily="@font/roboto_thin"
-        android:text="@string/button_text" />
-
-    <TextView
-        android:id="@+id/nickNameText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity=""
-        android:textAlignment="center"
-        android:visibility="gone" />
-
-    <ScrollView
-        android:id="@+id/bio_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="@string/app_name"
-        android:paddingStart="@dimen/padding_start"
-        android:paddingTop="@dimen/padding_start"
-        android:paddingEnd="@dimen/padding_start">
+        android:orientation="vertical">
 
-        <LinearLayout
+
+        <TextView
+            style="@style/NameStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_view" />
+
+        <ImageView
+            android:id="@+id/image_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_layout"
+            android:background="@color/black"
+            android:contentDescription="@string/image_start"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <EditText
+            android:id="@+id/nickNameEdit"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/hint_editText"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/done_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_top_layout"
+            android:fontFamily="@font/roboto_thin"
+            android:text="@string/button_text" />
+
+        <TextView
+            android:id="@+id/nickNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:textAlignment="center"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/bio_scroll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:contentDescription="@string/app_name"
+            android:paddingStart="@dimen/padding_start"
+            android:paddingTop="@dimen/padding_start"
+            android:paddingEnd="@dimen/padding_start">
 
-            <ImageView
-                android:id="@+id/image_chat"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/black"
-                app:srcCompat="@android:drawable/sym_action_chat" />
-
-            <TextView
-                android:id="@+id/textView"
-                style="@style/Theme.AboutMe"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:lineSpacingMultiplier="1.5"
-                android:text="@string/kotlin" />
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <ImageView
+                    android:id="@+id/image_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    app:srcCompat="@android:drawable/sym_action_chat" />
 
-    </ScrollView>
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/Theme.AboutMe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="@string/kotlin" />
+
+            </LinearLayout>
+
+        </ScrollView>
 
 
-</LinearLayout>
+    </LinearLayout>
 
+</layout>
