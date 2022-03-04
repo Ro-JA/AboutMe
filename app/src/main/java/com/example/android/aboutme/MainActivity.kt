@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 //        setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
 //        findViewById<Button>(R.id.done_button).setOnClickListener {
 //            addNickName(it)
 //        }
